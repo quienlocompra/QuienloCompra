@@ -1,0 +1,308 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Fonts Styles By Dannegm
+/**/
+
+html{
+	background: rgb;
+	min-height: 100%;
+	position: relative;
+	background: url('../img/abstract-104.jpg') center fixed no-repeat;
+	background-size: 100%;
+}
+
+body{
+	min-height: 600px;
+	font: 14px/1.3 'Calibri', Arial, sans-serif;
+}
+
+header {
+	background: rgb(186,0,1);
+	overflow: hidden;
+	width: 100%;
+	box-shadow: 0 3px 5px rgb(0,0,0);
+	position: absolute;
+	z-index: 9999;
+}
+
+	header hgroup, #wrap {
+		width: 800px;
+		margin: auto;
+	}
+
+		header h1 {
+			background: url('../img/miniLogo.png') no-repeat left center;
+			height: 60px;
+			width: 300px;
+			overflow: hidden;
+			text-indent: -99999px;
+			text-align: center;
+		}
+
+#wrap {
+	padding-top: 60px;
+	background: rgb(220,230,242);
+	border-radius: 0 0 10px 10px;
+	border: 1px solid rgb(74,126,187);
+	border-top: none;
+	margin-bottom: 50px;
+}
+
+	#wrap aside {
+		display: block;
+		float: left;
+		width: 300px;
+		padding-top: 20px;
+		overflow: hidden;
+		border-radius: 0 0 0 10px;
+	}
+
+		#wrap aside figure {
+			overflow: hidden;
+			margin: 20px;
+		}
+
+			#wrap aside figure img {
+				display: block;
+				float: left;
+				margin-right: 15px;
+				width: 50px;
+			}
+
+			#wrap aside figure figcaption {
+				overflow: hidden;
+			}
+
+				#wrap aside figure figcaption span {
+					display: block;
+					font-size: 16px;
+				}
+
+					#wrap aside figure figcaption span:first-child {
+						font-size: 20px;
+					}
+
+		#wrap aside article {
+			display: block;
+			margin: 10px 20px;
+			padding: 10px 0;
+			border-top: 1px solid rgb(185,205,229);
+			font-style: italic;
+		}
+
+	#wrap section {
+		display: block;
+		overflow: hidden;
+		width: 499px;
+		min-height: 500px;
+		padding-top: 15px;
+		background: rgb(242,242,242);
+		border-radius: 0 0 10px 0;
+		border-left: 1px solid rgb(74,126,187);
+	}
+
+		#wrap section form {
+			display: block;
+			overflow: hidden;
+			margin: 20px;
+			background: rgb(230,230,230);
+			border: 1px solid rgb(220,220,200);
+		}
+			#wrap section form div {
+				overflow: hidden;
+			}
+			#wrap section form label {
+				font-size: 14px;
+				color: rgb(89,89,89);
+				margin: 10px;
+				margin-bottom: 0px;
+				padding: 5px 3px;
+				display: block;
+				float: left;
+				font-family: sans-serif;
+			}
+			#wrap section form input, #wrap section form textarea, #wrap section form select {
+				display: block;
+				margin: 10px;
+				margin-bottom: 0px;
+				border: 1px solid rgb(166,166,166);
+				padding: 5px 3px;
+				width: 330px;
+				font-family: sans-serif;
+			}
+				#wrap section form textarea {
+					height: 80px;
+					float: left;
+				}
+			#wrap section form input[type="file"] {
+				height: 80px;
+				width: 80px;
+				margin: 10px;
+				margin-bottom: 0px;
+				overflow: hidden;
+			}
+			#wrap section form input[name="price"] {
+				width: 100px !important;
+				float: left;
+			}
+			#wrap section form select {
+				width: 100px !important;
+				float: left;
+			}
+			#wrap section form button {
+				float: right;
+			}
+
+		#wrap section article {
+			display: block;
+			overflow: hidden;
+			margin: 20px;
+		}
+
+			#wrap section article img {
+				height: 100px;
+			}
+
+			#wrap section article figure:first-child {
+				height: 50px;
+				width: 50px;
+				display: block;
+				overflow: hidden;
+				float: left;
+				margin: 5px 10px;
+			}
+				#wrap section article figure:first-child img {
+					height: 50px;
+					width: auto;
+					min-width: 10px;
+					margin: auto;
+					display: block;
+				}
+
+			#wrap section article .content {
+				display: block;
+				overflow: hidden;
+			}
+
+				#wrap section article hgroup {
+					display: block;
+					overflow: hidden;
+				}
+					#wrap section article hgroup h1 {
+						font-size: 16px !important;
+						font-weight: normal;
+						color: rgb(55,96,146);
+					}
+						#wrap section article hgroup h1 small {
+							font-size: 12px !important;
+							color: rgb(127,127,127);
+						}
+
+				#wrap section article p  {
+					font-size: 14px;
+					color: rgb(30,30,30);
+				}
+
+				#wrap section article nav  {
+					display: block;
+				}
+					#wrap section article nav ul  {
+						display: block;
+						overflow: hidden;
+					}
+						#wrap section article nav ul li  {
+							display: block;
+							overflow: hidden;
+							float: left;
+						}
+							#wrap section article nav ul li a  {
+								display: block;
+								overflow: hidden;
+								text-decoration: none;
+								font-size: 12px;
+								color: rgb(55,96,146);
+								margin-right: 5px;
+							}
+								#wrap section article nav ul li a:hover  {
+									text-decoration: underline;
+								}
+
+				#wrap section article .gallery {
+					display: block;
+					margin: 10px 0;
+				}
+					#wrap section article .gallery ul {
+						display: block;
+						overflow: hidden;
+					}
+						#wrap section article .gallery ul li {
+							display: block;
+							overflow: hidden;
+							float: left;
+							height: 70px;
+							max-width: 140px;
+							margin: 0;
+							padding: 0;
+						}
+							#wrap section article .gallery ul li  img{
+								display: block;
+								height: 70px;
+							}
+
+				#wrap section article .sale {
+					display: block;
+					overflow: hidden;
+					margin: 10px 0;
+				}
+					#wrap section article .sale span {
+						display: block;
+						float: left;
+						font-size: 18px;
+						color: rgb(127,127,127);
+						margin: 2px 0;
+						margin-right: 5px;
+					}
+						#wrap section article .sale .price {
+							color: rgb(99,37,35);
+							margin: 2px 0;
+						}
+
+/* Buttons */
+
+.button {
+	text-decoration: none;
+	color: #000;
+	font: 12px sans-serif;
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 5px 7px;
+	border: 1px solid rgb(127,127,127);
+	background: #eee;
+	background: -webkit-linear-gradient(top, rgb(242,242,242) 0%,rgb(217,217,217) 100%);
+	border-radius: 3px;
+}
+	.button:focus {
+		outline: none;
+		box-shadow: 0 0 3px rgb(38,125,230);
+	}
+	.button:hover {
+		background: #fff;
+		background: -webkit-linear-gradient(top, rgb(255,255,255) 0%,rgb(242,242,242) 100%);
+	}
+	.button:active {
+		background: rgb(242,242,242);
+	}
+	.true {
+		color: #fff;
+		background: rgb(149,55,53); background: -webkit-linear-gradient(top, rgb(149,55,53) 0%, rgb(99,37,35) 100%);
+	}
+		.true:hover {
+			background: rgb(192,80,77); background: -webkit-linear-gradient(top, rgb(192,80,77) 0%, rgb(149,55,53) 100%);
+		}
+		.true:active {
+			background: rgb(149,55,53);
+		}

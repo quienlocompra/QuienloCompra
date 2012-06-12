@@ -1,0 +1,421 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	background: rgb(238,236,225);
+	font: 14px/1.3 arial, sans-serif;
+	color: rgb(34,34,34);
+	overflow: auto;
+}
+
+body {
+	margin-top: 41px;
+	overflow: hidden;
+}
+
+.center {
+	width: 900px;
+	margin: auto;
+	display: block;
+}
+
+header {
+	background: rgb(186,0,1);
+	background: -webkit-linear-gradient(top, rgb(200,0,0) 0%, rgb(167,0,0) 100%);
+	overflow: hidden;
+	width: 100%;
+	height: 40px;
+	box-shadow: 0 3px 5px rgb(0,0,0);
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 9999;
+	border-bottom: 1px solid rgb(115,0,0);
+}
+
+	header hgroup {
+		display: block;
+		float: left;
+	}
+
+		header h1 {
+			background: url('../img/miniLogo.png') no-repeat left center;
+			height: 40px;
+			width: 160px;
+			text-indent: -99999px;
+			text-align: center;
+		}
+
+	header form{
+		display: block;
+		float: right;
+	}
+
+		header form input {
+			display: block;
+			margin: 7px 0 !important;
+			padding: 5px;
+			padding-left: 22px !important;
+			height: 14px;
+			border: 1px solid rgb(200,200,200);
+			background: rgb(242,242,242) url('../img/search.png') 6px center no-repeat !important;
+			border-radius: 14px !important;
+		}
+			header form input:focus {
+				outline: none;
+				background: rgb(255,255,255);
+			}
+
+/* Index
+/**/
+
+#index {
+	background: rgb(186,0,1);
+	color: rgb(255,255,255);
+}
+
+	#index #logo {
+		display: block;
+		text-align: center;
+		margin: 20px;
+	}
+
+	#index div {
+		overflow: hidden;
+	}
+
+	#index #login, #index #register {
+		width: 409px;
+		padding: 0 20px;
+		display: block;
+		overflow: hidden;
+		float: left;
+	}
+
+		#index #login {
+			direction: rtl;
+		}
+
+		#index #register {
+			border-left: 1px solid rgb(99,37,35);
+		}
+
+		#index form h2 {
+			text-shadow: -1px -1px rgba(0,0,0,.5);
+		}
+
+		#index form input {
+			display: block;
+			margin: 8px 0;
+			padding: 5px;
+			height: 14px;
+			width: 200px;
+			border: 1px solid rgb(200,200,200);
+			background: rgb(242,242,242);
+			border-radius: 3px;
+		}
+		#index input[type="checkbox"] {
+			display: inline;
+			margin: auto;
+			width: auto;
+		}
+		#index label {
+			font-size: 12px;
+			color: rgb(255,255,255);
+		}
+
+		#index #login a {
+			color: rgb(255,255,0);
+			text-decoration: none;
+		}
+
+		#captcha {
+			display: block;
+			border-radius: 3px;
+			cursor: pointer;
+			width: 210px;
+		}
+
+/* Footer
+/**/
+
+#index body > footer {
+	position: absolute;
+	bottom: 0; left: 0;
+	box-shadow: inset 0px 2px 3px rgba(0,0,0,.7);
+	border: none;
+}
+body > footer.fixed {
+	position: absolute;
+	bottom: 0; left: 0;
+}
+
+body > footer {
+	display: block;
+	margin-top: 50px;
+	width: 100%;
+	border-top: 1px solid rgb(166,166,166);
+	background: #eee;
+	background: -webkit-linear-gradient(top, rgb(242,242,242) 0%,rgb(217,217,217) 100%);
+	font-size: 12px;
+	overflow: hidden;
+}
+
+	body > footer p {
+		display: block;
+		float: left;
+		color: rgb(127,127,127);
+		margin: 15px;
+	}
+
+	body > footer nav {
+		display: block;
+		float: right;
+		margin: 15px;
+	}
+
+		body > footer nav ul li {
+			display: block;
+			float: left;
+			margin-right: 5px;
+			padding-left: 5px;
+			border-left: 1px solid rgb(127,127,127);
+		}
+			body > footer nav ul li:first-child {
+				border: none;
+			}
+
+			body > footer nav ul li a {
+				text-decoration: none;
+				color: rgb(79,129,189);
+			}
+				body > footer nav ul li a:hover {
+					text-decoration: underline;
+				}
+
+/* Seccion
+/**/
+
+.medium {
+	width: 700px;
+	margin: auto;
+}
+.top50 {
+	margin-top: 50px !important;
+}
+.now {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+.next {
+	-webkit-transform: translate3d(150%, 0, 0);
+	-moz-transform: translate(150%, 0);
+	-ms-transform: translate(150%, 0);
+	-o-transform: translate(150%, 0);
+	transform: translate(150%, 0);
+}
+.back {
+	-webkit-transform: translate3d(-150%, 0, 0);
+	-moz-transform: translate(-150%, 0);
+	-ms-transform: translate(-150%, 0);
+	-o-transform: translate(-150%, 0);
+	transform: translate(-150%, 0);
+}
+
+section, .section {
+	background: rgb(255,255,255);
+	border: 1px solid rgb(166,166,166);
+	margin: 10px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+section {
+	-webkit-transition: -webkit-transform .5s;
+	-moz-transition: -moz-transform .5s;
+	-o-transition: -o-transform .5s;
+	transition: transform .5s;
+	margin-top: -460px !important;
+	height: 460px;
+}
+	section div {
+		overflow: hidden;
+	}
+	section > hgroup {
+		display: block;
+		background: rgb(186,0,0);
+		color: rgb(255,255,255);
+		overflow: hidden;
+	}
+		section > hgroup:after {
+			content: ' ';
+			display: block;
+			height: 10px;
+			background: url('../img/spritered.png');
+		}
+		section hgroup h1 {
+			font-size: 18px;
+			font-weight: normal;
+			margin: 10px 20px;
+		}
+	section hgroup {
+		display: block;
+		overflow: hidden;
+	}
+		section hgroup h2 {
+			font-size: 16px;
+			font-weight: normal;
+			margin: 10px 20px;
+			color: rgb(55,96,146);
+		}
+			section hgroup h2 span {
+				color: rgb(127,127,127);
+			}
+	section p {
+		font-size: 13px;
+	}
+		section p.large {
+			padding: 10px 20px;
+			height: 300px;
+			border-top: 1px solid rgb(217,217,217);
+		}
+		section p.medium {
+			padding: 10px 40px 10px 20px;
+			height: 300px;
+			width: 250px;
+			float: left;
+		}
+			section p a, .section p a {
+				color: rgb(55,76,146);
+				text-decoration: none;
+			}
+				section p a:hover, .section p a:hover {
+					text-decoration: underline;
+				}
+
+		section fieldset {
+			display: block;
+			margin: 0px 20px;
+			border: none;
+			background: none;
+			overflow: hidden;
+		}
+			section label {
+				display: block;
+				margin: 5px;
+			}
+			section input{
+				display: block;
+				margin: 5px;
+				padding: 5px;
+				height: 14px;
+				width: 240px;
+				border: 1px solid rgb(200,200,200);
+				background: rgb(242,242,242);
+				border-radius: 3px;
+			}
+			section .c2 {
+				float: left;
+			}
+				section select {
+					display: block;
+					margin: 5px;
+					padding: 5px;
+					width: 100px;
+					border: 1px solid rgb(200,200,200);
+					background: rgb(242,242,242);
+					border-radius: 3px;
+				}
+					section select.w200 {
+						width: 200px;
+					}
+			#ui-datepicker-div {
+				font-size: 10px;
+			}
+		section iframe {
+			display: block;
+			margin: 0px 20px;
+			border: none;
+			background: none;
+			overflow: hidden;
+			width: 360px;
+			height: 310px;
+		}
+
+	section footer {
+		padding: 5px 20px;
+		border-top: 1px solid rgb(217,217,217);
+		display: block;
+		overflow: hidden;
+	}
+		section footer .button, section footer button {
+			float: right;
+			margin: 5px 0;
+			margin-left: 10px;
+		}
+
+
+/* Buttons
+/**/
+
+.button, button {
+	text-decoration: none;
+	text-align: center;
+	color: #000;
+	font: 12px sans-serif;
+	display: block;
+	margin: 10px 0px;
+	padding: 5px 7px;
+	border: 1px solid rgb(166,166,166);
+	background: #eee;
+	background: -webkit-linear-gradient(top, rgb(242,242,242) 0%,rgb(217,217,217) 100%);
+	border-radius: 3px;
+	box-shadow: 0px 1px 1px rgba(0,0,0,.7);
+	cursor: pointer;
+}
+	.button:focus, button:focus {
+		outline: none;
+		box-shadow: 0 0 3px rgb(38,125,230);
+	}
+	.button:hover, button:hover {
+		background: #fff;
+		background: -webkit-linear-gradient(top, rgb(255,255,255) 0%,rgb(242,242,242) 100%);
+	}
+	.button:active, button:active {
+		background: rgb(217,217,217);
+		box-shadow: none;
+	}
+
+.red {
+	border: 1px solid rgb(115,0,0);
+	background: rgb(200,0,1);
+	background: -webkit-linear-gradient(top, rgb(200,0,0) 0%, rgb(167,0,0) 100%);
+	color: rgb(255,255,255);
+}
+	.red:hover {
+		background: rgb(242,0,0);
+	background: -webkit-linear-gradient(top, rgb(242,0,0) 0%, rgb(200,0,0) 100%);
+	}
+	.red:active {
+		background: rgb(200,0,0);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* msgdialog */
+#msgWrap { display: none; position: absolute; top: 100px; left: 0; right: 0; overflow: hidden; } #msgShadow { width: 500px; margin: auto; padding: 10px; background: rgb(40,40,40); background: rgba(0,0,0,.7); border-radius: 10px; overflow: hidden; } #msgBox { overflow: hidden; border-radius: 7px; box-shadow: 0 0 5px #000; } #msgTitle { font-size: 16px; padding: 10px; display: block; overflow: hidden; border-radius: 7px 7px 0 0; background:  rgb(186,0,1); } .sprite { content: ' '; display: block; height: 10px; background: url('../img/spritered.png'); } #msgContent { color: #444; display: block; overflow: hidden; font: 14px/1.4 sans-serif; padding: 10px; background: #fff; } #msgOptions { display: block; overflow: hidden; background: rgb(217,217,217) !important; border-radius: 0 0 7px 7px; padding: 5px; } #msgOptions .button { float: right; margin: 5px !important; }
