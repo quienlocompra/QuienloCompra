@@ -10,7 +10,7 @@ Autores
 + http://twitter.com/gomosoft
 + http://github.com/gomosoft
 
-**Jacob Thornton**
+**Daniel García**
 
 + http://twitter.com/dannegm
 + http://github.com/dannegm
