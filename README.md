@@ -1,9 +1,8 @@
 
-
 Una forma diferente de comprar y vender en la red.
 
 
-Atores
+Autores
 -------
 
 **Javier Gómez Mora**
