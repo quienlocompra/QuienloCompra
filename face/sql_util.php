@@ -1,8 +1,12 @@
 <?php
 class sql{
-	function sql(){
+
+	function __construct(){
+
 	}
+
 function filtrar($str){
+
    if (!isset($GLOBALS["carateres_latinos"])){
       $todas = get_html_translation_table(HTML_ENTITIES, ENT_NOQUOTES);
       $etiquetas = get_html_translation_table(HTML_SPECIALCHARS, ENT_NOQUOTES);
@@ -10,11 +14,14 @@ function filtrar($str){
    }
    $str = strtr($str, $GLOBALS["carateres_latinos"]);
    return $str;
+
 }
 
 function conectar($host,$user,$pass){ 
-   $link=mysqli_connect($host,$user,$pass) or die ("<h1 style='margin:10px'>Oops, Error conectando con SQL estamos trabajando pronto lo solucionaremos...</h1></div>");
+
+   $link=mysqli_connect($host,$user,$pass) or die ("error no se pudo conectar");
    return $link; 
+
 }
 
 function sdb($db,$con){
